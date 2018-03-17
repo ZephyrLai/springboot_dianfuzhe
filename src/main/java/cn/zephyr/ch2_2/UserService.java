@@ -1,4 +1,4 @@
-package cn.zephyr.ch2.ch2_2_1;
+package cn.zephyr.ch2_2;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

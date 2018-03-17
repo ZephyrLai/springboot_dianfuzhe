@@ -1,4 +1,4 @@
-package cn.zephyr.ch1.ch1_3_3;
+package cn.zephyr.ch1_3;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

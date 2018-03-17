@@ -1,4 +1,4 @@
-package cn.zephyr.ch2.ch2_2_1;
+package cn.zephyr.ch2_2;
 
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
-import org.springframework.core.env.PropertySourcesPropertyResolver;
 import org.springframework.core.io.Resource;
 
 import java.io.IOException;
@@ -17,8 +16,8 @@ import java.io.IOException;
  * @Date: 2018/3/17 14:48
  */
 @Configuration
-@ComponentScan("cn.zephyr.ch2.ch2_2_1")
-@PropertySource("classpath:cn/zephyr/ch2/ch2_2_1/config.properties")
+@ComponentScan("cn.zephyr.ch2_2")
+@PropertySource("classpath:cn/zephyr/ch2_2/config.properties")
 public class SpringEL {
     //注入字符串
     @Value("This SpringFramework")
@@ -36,7 +35,7 @@ public class SpringEL {
     @Value("#{hahaService.serviceName}")
     private String serviceName;
 
-    @Value("classpath:cn/zephyr/ch2/ch2_2_1/test.txt")
+    @Value("classpath:cn/zephyr/ch2_2/test.txt")
     private Resource testFile;
 
     @Value("http://www.laizonghao.cn:8080")
